@@ -8,6 +8,6 @@ public class ControladorRest {
 
     @GetMapping("/")
     public String saludo() {
-        return "Este es mi primer pagina Wen con Sprint Boot";
+        return "Este es mi primer pagina Web con Sprint Boot";
     }
 }
