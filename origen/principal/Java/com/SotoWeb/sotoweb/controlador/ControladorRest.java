@@ -21,11 +21,12 @@ public class ControladorRest {
         return miEmployee.toString();
     }
 
-    @GetMapping("/entreprise")
+    @GetMapping("/enterprise")
     public String generarEnterprise(){
         Enterprise miEnterprise = new Enterprise(4L,"jdsotoca","01020304","3002345876","Calle 5 Nro. 5 - 5", new ArrayList<Employee>(),new ArrayList<Transaction>(),new Date(),new Date());
         return miEnterprise.toString();
     }
+
     @GetMapping("/profile")
     public String generarProfile() {
         Profile miProfile = new Profile(1L,"imagen.jpg","3165035117",new Employee(), new Date(),new Date());
