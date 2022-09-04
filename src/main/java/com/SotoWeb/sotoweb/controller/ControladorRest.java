@@ -21,6 +21,7 @@ public class ControladorRest {
         return miEmployee.toString();
     }
 
+    @GetMapping("/entreprise")
     public String generarEnterprise(){
         Enterprise miEnterprise = new Enterprise(4L,"jdsotoca","01020304","3002345876","Calle 5 Nro. 5 - 5", new ArrayList<Employee>(),new ArrayList<Transaction>(),new Date(),new Date());
         return miEnterprise.toString();
